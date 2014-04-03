@@ -1,10 +1,389 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf8" />
+
     <title>NFC</title>
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Xebia IT Architects"/>
+    <meta name="reply-to" content="marketing@xebia.com"/>
+    <meta name="owner" content="Xebia IT Architects"/>
+    <meta name="description"
+          content="NFC"/>
+    <meta name="keywords"
+          content="Xebia, NFC"/>
+    <meta name="content-language" content="fr"/>
+    <meta name="robots" content="follow,index,all"/>
+
+    <meta name="viewport" content="width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+
+    <link href="styles/main.min.css" rel="stylesheet"/>
+    <script type="text/javascript">
+        WebFontConfig = {
+            google: { families: [ 'Pacifico::latin', 'Cantarell:400,700:latin' ] }
+        };
+        (function () {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })(); </script>
+
+
 </head>
 <body>
+<header>
+    <img class="logo-xebia" alt="logo xebia" src="images/xebia_logo-large-purple.png" class="logo-xebia"/>
+    <img class="logo-devoxx" alt="logo devoxx" src="images/devoxx_france_150px.png" class="logo-devoxx"/>
+</header>
+<section id="intro">
+    <div class="nfc-button-wrapper">
+        <img alt="button nfc" src="images/NFC-rond-V3.png"/>
+    </div>
 
+    <div class="follow-votes-wrapper">
+        <h1>Suivez vos votes</h1>
+    </div>
+
+    <div class="text-wrapper">
+        <p>Cette année, Xebia s'est chargé de réaliser un système de vote proposant à tous les
+            conférencies de Devoxx Fr d'attribuer une note de 1 à 5 aux pésentations, selon le système ROTI cher aux
+            agilistes.
+        </p>
+
+        <p>Le principe est simple&nbsp;: au dos de votre badge Devoxx, vous trouverez une puce NFC. Il vous suffira de
+            passer ce badge sur le lecteur qui se trouvera à la sortie de chaque salle et d'attribuer une note.
+            Ainsi, le tour est joué&nbsp;!</p>
+
+        <p class="emphasized">Venez découvrir toute la technologie mise en place pour ces boitiers de vote sur notre
+            stand&nbsp;!
+            Et assister à la conférence de Pablo Lopez sur "L'internet des objets investit Devoxx France".</p>
+    </div>
+</section>
+<section id="nfc">
+    <div class="text-wrapper">
+
+        <img src="images/NFC-logo.png" alt="nfc" class="nfc-logo"/>
+
+        <h1>NFC ou la communication</h1>
+
+        <h2>En champ de Force</h2>
+
+        <p>Le NFC est une technologie de communication sans-fil à courte portée
+            et haute fréquence, permettant l'échange d'informations entre des périphériques
+            jusqu'à une distance d'environ 10cm. Cette technologie est une extension de
+            la norme ISO/CEI 14443 standardisant les cartes de proximité utilisant la
+            radio-identification (RFID), qui combinent l'interface d'une carte à puce et un
+            lecteur au sein d'un seul périphérique.</p>
+    </div>
+</section>
+<section id="object-connected">
+    <img class="logo-ecrans" alt="logo avec pleins d'écrans" src="images/responsive-nfc.png"/>
+
+    <div class="text-wrapper">
+
+        <h1>Les objets <span class="emphasized">connectés</span></h1>
+
+        <h2>Smartwatch, traqueur connecté, coach numérique, balance intelligente...</h2>
+
+        <p>La diversité des objets connectés donne l'impression que ces nouveaux devices
+            sont partout parmi nous. Une première impression à nuancer avec la réalité.
+            D'après une étude menée par l'Atelier BNP Paribas, seule 11% de la population
+            française (âgée de plus de 18 ans) est actuellement équipée d'un objet
+            connecté. "Cela représente tout de même plus de 5 millions de personnes"
+            précisent les auteurs de l'étude. Le pourcentage grimpe à 14% chez les
+            18-24 ans.</p>
+    </div>
+</section>
+<section id="who-are-we">
+    <h1>Qui sommes <span class="emphasized">nous&nbsp;?</span></h1>
+
+    <div class="text-wrapper">
+        <h2>
+            People First - Customer Intimacy
+            <br/>
+            Sharing Knowledge - Quality Without Compromise
+        </h2>
+
+
+        <p>Xebia est un cabinet de conseil international spécialisé dans les
+            technologies Big Data, Cloud et Web, les architectures Java et la
+            mobilité dans les environnements agiles.</p>
+
+        <p>
+            Xebia se distingue par sa manière d'interagir avec ses clients et
+            ses employés. Nous recrutons des consultants passionnés et expérimentés.
+            Ils ont fait le choix d'une carrière technique et incarnent au quotidien
+            les valeurs de Xebia. Avec nos clients, nous construisons des partenariats
+            sur le long terme et délivrons du travail de haute qualité.
+        </p>
+
+        <p>
+            La mission de Xebia est d'être une autorité de l'écosystème des nouvelles
+            technologies. Cette mission, associée à notre système de valeurs, est
+            le ciment des 300 employés de Xebia à travers le monde (Pays-Bars, France, Inde
+            et États-Unis).
+        </p>
+    </div>
+</section>
+<section id="speakers">
+    <h1>Nos <span class="emphasized">speakers</span></h1>
+
+    <div class="text-wrapper">
+        <h2>Les conférences</h2>
+
+        <div class="flexgroup">
+            <div class="slot">
+                <img alt="Pablo Lopez" src="images/pablo.png"/>
+                <span class="name">Pablo Lopez</span>
+
+                <div class="description">
+                    L'internet des objets investit Devoxx France
+                </div>
+            </div>
+
+            <div class="slot">
+                <img alt="Mathieu Breton" src="images/mathieu.png"/>
+                <span class="name">Mathieu Breton</span>
+
+                <div class="description">
+                    JavaScript the next big... bytecode
+                </div>
+            </div>
+        </div>
+
+
+        <h2>Tools in Action</h2>
+
+        <div class="flexgroup">
+
+            <div class="slot">
+                <img alt="Thomas Guérin" src="images/thomas.png"/>
+                <span class="name">Thomas Guérin</span>
+
+                <div class="description">
+                    Robotium vs Espresso:<br/>
+                    Get ready to rumble!
+                </div>
+            </div>
+
+            <div class="slot">
+                <img alt="Philippe Antoine" src="images/philippe.png"/>
+                <span class="name">Philippe Antoine</span>
+
+                <div class="description">
+                    15' pour coder Tetris en CoffeeScript
+                </div>
+            </div>
+
+            <div class="slot">
+                <img alt="Aurélien Maury" src="images/aurelien.png"/>
+                <span class="name">Aurélien Maury</span>
+
+                <div class="description">
+                    REST facile et robuste avec Vert.x et Groovy
+                </div>
+            </div>
+        </div>
+
+        <h2>Hand's on</h2>
+
+        <div class="flexgroup">
+            <div class="slot">
+                <img alt="Xavier Bucchiotty" src="images/xavier.png"/>
+                <span class="name">Xavier Bucchiotty</span>
+
+                <div class="description">
+                    Prenez le contrôle d'un aéroport avec Akka
+                </div>
+            </div>
+
+            <div class="slot">
+                <img alt="Mathieu Breton" src="images/mathieu.png"/>
+                <span class="name">Mathieu Breton</span>
+
+                <div class="description">
+                    The Dart side of disruption
+                </div>
+            </div>
+
+            <div class="slot2">
+                <div class="speaker-wrapper">
+                    <div class="speaker">
+                        <img alt="Guillaume Arnaud" src="images/guillaume.png"/>
+                        <span class="name">Guillaume Arnaud</span>
+                    </div>
+
+                    <div class="speaker">
+                        <img alt="William Montaz" src="images/william.png"/>
+                        <span class="name">William Montaz</span>
+                    </div>
+                </div>
+                <div class="description">
+                    Tests de perf en continu
+                </div>
+            </div>
+
+        </div>
+
+        <h2>Les quickies</h2>
+
+        <div class="flexgroup">
+            <div class="slot">
+                <img alt="Benoit Lemoine" src="images/benoit.png"/>
+                <span class="name">Benoit Lemoine</span>
+
+                <div class="description">
+                    La puissance de mon monoïde est supérieure
+                    à 9000
+                </div>
+            </div>
+
+            <div class="slot">
+                <img alt="Florent Duveau" src="images/florent-duveau.png"/>
+                <span class="name">Florent Duveau</span>
+
+                <div class="description">
+                    Sinon.JS, l'ami du test unitaire JavaScript
+                </div>
+            </div>
+
+            <div class="slot">
+                <img alt="Sébastian Le Merdy" src="images/sebastian.png"/>
+                <span class="name">Sébastian Le Merdy</span>
+
+                <div class="description">
+                    David m'a refactorer
+                </div>
+            </div>
+
+            <div class="slot">
+                <img alt="Florent Le Gall" src="images/florent-legall.png"/>
+                <span class="name">Florent Le Gall</span>
+
+                <div class="description">
+                    Promesses et Yield&nbsp;:
+                    les Future&lt;?&gt; de JavaScript
+                </div>
+            </div>
+
+            <div class="slot wide">
+                <img alt="Jean-Eudes Couignoux" src="images/jeaneudes.png"/>
+                <span class="name">Jean-Eudes Couignoux</span>
+
+                <div class="description">
+                    De la virtualisation aux conteneurs légers&nbsp;:<br/>
+                    comment le noyau linux isole des applications
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section id="our-stand">
+    <h1>À Découvrir <span class="emphasized">sur notre stand</span></h1>
+
+    <h2>Les animations</h2>
+
+    <div class="flexgroup">
+        <div class="animation">
+            <img src="images/shoot-xebian.png" alt="shoot the xebian"/>
+
+            <div class="description">Shoot the Xebians</div>
+        </div>
+        <div class="animation">
+            <img src="images/photo-call.png" alt="photo call"/>
+
+            <div class="description">Photo Call</div>
+        </div>
+        <div class="animation">
+            <img src="images/code-elevator.png" alt="code elevator"/>
+
+            <div class="description">Code Elevator</div>
+        </div>
+    </div>
+</section>
+<section id="planning">
+    <h1>Le programme du stand</h1>
+
+    <table class="text-wrapper">
+        <tbody>
+        <tr>
+            <th><time>Mecredi 16 Avril</time></th>
+            <th>Espace <span class="emphasized">Gauche</span></th>
+            <th>Espace <span class="emphasized">Droit</span></th>
+        </tr>
+        <tr class="planning-line">
+            <td>08h00<br/>13h30</td>
+            <td>&nbsp;</td>
+            <td>Code Elevator</td>
+        </tr>
+        <tr class="planning-line last-line">
+            <td>13h30<br/>18h50</td>
+            <td>&nbsp;</td>
+            <td>Shoot the Xebians</td>
+        </tr>
+        </tbody>
+        <tbody>
+        <tr>
+            <th><time>Jeudi 17 Avril</time></th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+        </tr>
+        <tr class="planning-line">
+            <td>08h00<br/>13h25</td>
+            <td>&nbsp;</td>
+            <td>Shoot the Xebians</td>
+        </tr>
+        <tr class="planning-line">
+            <td>13h25<br/>18h55</td>
+            <td class="photo-up">Stand Photo </td>
+            <td>Code Elevator</td>
+        </tr>
+        <tr class="planning-line last-line">
+            <td>18h55<br/>22h30</td>
+            <td class="photo-down">+<br/>Envoi des photos en simultané</td>
+            <td>Shoot the Xebians</td>
+        </tr>
+        </tbody>
+
+        <tbody>
+        <tr>
+            <th><time>Vendredi 18 Avril</time></th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+        </tr>
+
+        <tr class="planning-line">
+            <td>08h00<br/>13h30</td>
+            <td class="photo-up">Stand Photo </td>
+            <td>Code Elevator</td>
+        </tr>
+        <tr class="planning-line very-last-line">
+            <td>13h30<br/>18h55</td>
+            <td class="photo-down">+<br/>Envoi des photos en simultané</td>
+            <td>Shoot the Xebians</td>
+        </tr>
+        </tbody>
+    </table>
+
+</section>
+<section id="devoxx">
+    <img alt="devoxx france" src="images/devoxx-france.png" />
+    <div class="goto-devoxx-site">
+        <a href="http://www.devoxx.fr/" title="aller sur le site Devoxx France">ALLER SUR LE SITE</a>
+    </div>
+</section>
+<footer>
+</footer>
+
+<script src="scripts/main.min.js"></script>
 </body>
 </html>
