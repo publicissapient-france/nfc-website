@@ -15,11 +15,14 @@
 // Flexbox display
 // flex or inline-flex
 .flex-display(@display: flex) {
+
   display: ~"-webkit-@{display}";
   display: ~"-moz-@{display}";
   display: ~"-ms-@{display}box"; // IE10 uses -ms-flexbox
   display: ~"-ms-@{display}"; // IE11
   display: @display;
+
+
 }
 
 // Flex Line Wrapping
@@ -108,19 +111,33 @@ p, h1, h2 {
 }
 
 header {
-  height: 60px;
+  min-height: 60px;
   background-color: @xebiaColor;
+  padding-bottom: 10px;
 
   .logo-xebia {
     margin-left: 45px;
-    margin-top: 10px;
+    margin-top: 15px;
     float: left;
   }
 
   .logo-devoxx {
     float: right;
     margin-right: 45px;
-    margin-top: 18px;
+    margin-top: 23px;
+
+  }
+
+  @media (max-width: 420px) {
+    text-align: center;
+    .logo-devoxx, .logo-xebia {
+      margin-top: 0;
+      padding-top: 10px;
+      display: block;
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   .clearFloat();
@@ -429,6 +446,7 @@ section {
     .slot, .speaker {
       height: @slotHeight;
       width: @slotWidth;
+      display: inline-block;
 
       &.wide {
         width: 330px;
@@ -453,13 +471,28 @@ section {
     .slot2 {
       height: @slotHeight;
       width: @slotWidth*2;
+      margin:0 auto;
 
       .speaker-wrapper {
+
         .speaker {
           float: left;
           height: 180px;
         }
         .clearFloat();
+      }
+
+      @media (max-width: 420px) {
+        width: 360px;
+        height: auto;
+
+        .speaker-wrapper {
+          margin: 0 auto;
+          .speaker {
+            width: 180px;
+            margin: 0 auto;
+          }
+        }
       }
 
       .description {
@@ -487,8 +520,10 @@ section {
     .flex-wrap(wrap);
     .justify-content(center);
     margin-bottom: 30px;
+    text-align: center;
 
     .animation {
+      display: inline-block;
       width: 230px;
 
       img {
