@@ -4,5 +4,5 @@ nfc-website
 Website NFC
 
 
-meta
-analytics
+* Line-height des blocs de text
+* Click sur le gros bouton
