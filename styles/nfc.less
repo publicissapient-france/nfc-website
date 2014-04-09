@@ -263,7 +263,6 @@ section {
   }
 }
 
-
 #object-connected {
   @minHeightObject : 320px;
 
@@ -417,14 +416,35 @@ section {
   }
 }
 
-
 #programm {
 
-  text-align:center;
+  text-align: center;
 
   .text-wrapper {
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 30px;
+    font-size:18px;
+  }
+  .applications {
+    margin-top: 30px;
+    .application {
+      margin: 0 15px;
+      display: inline-block;
+      img {
+        max-width: 103px;
+      }
+
+      .name, .os {
+        margin: 5px 0;
+      }
+      .name {
+        font-weight: bold;
+      }
+      .os {
+        color: @greyLine;
+      }
+
+    }
   }
 
   .emphasized {
